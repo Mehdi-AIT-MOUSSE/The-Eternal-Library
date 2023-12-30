@@ -1,0 +1,341 @@
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #aeaeae;
+}
+
+
+
+
+
+header{
+    margin-left: 15px;
+    width: 70%;
+    height: 6em;
+    display: flex;
+}
+
+header img{
+    width: 6.5em;
+    height: 6em;
+    border-radius: 15px ;
+    border: 2px solid #d4652f;
+
+} 
+
+header h1{
+    margin-left: 15px;
+    color: aliceblue;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    text-shadow: 0 0 15px black ;
+}
+
+
+
+
+
+nav{
+    position: absolute;
+    right:15px;
+    top: 30px;
+    width: 30%;
+    height: 3em;
+    
+}
+
+nav input{
+    width: 100%;
+    height: 3em;
+    border: none;
+    box-shadow: 0 0 5px whitesmoke;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+nav img{
+    width: 1.5em;
+    height: 1.5em;
+
+    position: absolute;
+    top:0.5rem;
+    left: 0.3rem;
+}
+
+nav input:hover,nav input:focus{
+    background-color: #e4e4e4;
+    border:2px solid #d4652f;
+}
+
+
+
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+section{
+    background-color: #ffffff;
+    width: 40%;
+    height: 18em;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow:0 0 5px #001c3d;
+    transition: 0.9s ease;
+}
+
+section:hover{
+    transform: scale(1.1);
+    border: #d4652f 2px solid;
+    box-shadow:0 0 5px #ffffff;
+}
+
+section img{
+    width: 9em;
+    
+}
+
+.data{
+    margin-left:10px;
+}
+
+.data p{
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.data h2{
+    color: #d4652f;
+    text-align: center;
+    text-shadow:0 0 1px rgb(76, 75, 75);
+
+}
+
+.data h4{
+    color: #001c3d;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+.data a{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8f8f8e0;
+    font-weight: 900;
+    text-shadow:0 0 1px #001c3d;
+    
+
+}
+
+.data a:hover{
+    text-shadow:0 0 10px #ffffff;
+}
+
+.btn{
+    margin: auto;
+    margin-top:5px ;
+    width: 6em;
+    height: 3em;
+    background-color: #d4652f;
+    
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s ease;
+    box-shadow:0 0 5px #0d0c22;
+}
+
+.btn:hover{
+    background-color: #9e9ea7;
+    border:2px solid #d4652f;
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+footer{
+    margin-top:15px ;
+    background-color: #d4652f;
+    color: #001c3d;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: #EAF6FF;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.social-icon a{
+    color: #EAF6FF;
+    font-size: 1.4em;
+    padding-right: 30px;
+    transform: scale(1.1);
+}
+
+.social-icon a:hover{
+    text-shadow: 0 0 20px rgb(250, 250, 197);
+}
+
+@media all and (min-width:560px) and (max-width:800px){
+
+    header h1{
+        font-size: 1.6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section{
+        width: 80%;
+        height: auto;
+    }
+
+    section img{
+        width: 13em;
+        height: auto;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data p{
+        text-align: center;
+    }
+
+
+
+
+}
+   
+   
+   
+
+@media all and (max-width:560px){
+
+    header{
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    header h1{
+        font-size: 1.6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header img{
+        width: 6em;
+        height: 5.5em;
+    } 
+
+
+
+
+
+    nav{
+        position: static;
+        width: 80%;
+        margin:auto;
+    }
+    
+    
+    nav img{
+        position: absolute;
+        top:7.1em;
+        left:2.8em;
+    }
+
+
+
+  
+    
+    section{
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section:hover{
+        transform: none;
+    }
+
+    section img{
+        width: 90%;
+    }
+
+
+    
+    
+    .data{
+       margin: 0;
+    }
+    
+    .data p{
+        text-align: center;
+    }
+
+    .social-icon{
+        flex-wrap: wrap;
+        
+    }
+
+    .social-icon a{
+        width: 20%;
+    }
+
+
+}
+
+   
+
+
+   
+   
