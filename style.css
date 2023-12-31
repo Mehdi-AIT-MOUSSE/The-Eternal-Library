@@ -171,6 +171,8 @@ section img{
     box-shadow:0 0 5px #0d0c22;
 }
 
+
+
 .btn:hover{
     background-color: #9e9ea7;
     border:2px solid #d4652f;
@@ -254,6 +256,7 @@ footer{
    
 
 @media all and (max-width:560px){
+    
 
     header{
         width: 100%;
@@ -309,6 +312,12 @@ footer{
 
     section img{
         width: 90%;
+    }
+
+    .btn:hover{
+        background-color: #d4652f;
+        border:0px solid #d4652f;
+        transform: scale(0.0);
     }
 
 
