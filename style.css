@@ -317,7 +317,7 @@ footer{
     .btn:hover{
         background-color: #d4652f;
         border:0px solid #d4652f;
-        transform: scale(0.0);
+        transform: none;
     }
 
 
